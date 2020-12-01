@@ -1,0 +1,12 @@
+the basic code is already in the file Script.js
+In this case I can give you two recommendations depending on the behaviour you want to implement.
+
+1. When the image reaches an edge, you want the image does not move towards that edge anymore
+ In this case, you just have to check weather the image is at an edge and the user pressed a key that will take it 
+ out of the screen bounds, if that is the case, you just ignore the jey that was pressed.
+ Another situation you can have here, is if the image is close to the screen edge, and another move toward that edge will move the image
+ out of the screen bounds, here you can just move the image to the edge, instead of moving it the same amount of px than before.
+
+2. When the image reaches an edge, and you press again the same key, you want the image to appears in the opposite edge, giving the impresion that the image moves in a circle edge.
+Here you check as in 1, using the image position, instead of doing the same that your doing now, you change the position of the image, to make it 
+appear at the oposite edge of the screen.
